@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+        </symbol>
+        <symbol id="info-fill" viewBox="0 0 16 16">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </symbol>
+        <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </symbol>
+    </svg>
+
+    <h1 style="text-align: center; margin: 20px; color: #000000; font-family: 'Anton', sans-serif; font-size: 50px;">
+        Documentação Papa Doce</h1>
+
+    <div class="d-flex m-5">
+        <div style="background-color: white; border-radius: 5px;">
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <a onclick="window.history.back();" class="btn btn-outline-secondary" for="btnradio1">Voltar</a>
+            </div>
+        </div>
+    </div>
+    <!-- <video id="meuVideo" width="640" height="360" controls>
+        <source src="./videos/Meet_ xyb-fzbe-hpr - Pessoal — Microsoft​ Edge 2023-12-04 19-54-06.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video> -->
+
+    <ul class="accordion-menu">
+        <h2 style="text-align: center; margin: 20px; color: #000000; font-family: 'Anton', sans-serif; font-size: 30px;">
+            <u>Realizar venda no Industrial</u></h2>
+        <!-- Passo 1 -->
+        <li>
+            <div onclick="toggle_('section-1')" class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                1° Passo - Abrir a Venda 
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <section class="submenuItems" id="section-1">
+                <p>Para abrir a tela de vendas basta apertar a tecla <b>F11</b> do teclado ou ir pelo seguinte caminho de navegação do menu <b>Vendas -> CRM/Gerenciador de Relacionamentos </b> </p>
+                <img src="../img/F11.png" alt="Imagem Venda">
+            </section>
+        </li>
+        <!-- Passo 2 -->
+        <li>
+            <div onclick="toggle_('section-2')" class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                2° Passo - Selecionar o Cliente 
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <section class="submenuItems" id="section-2">
+                <p>Ao abrir a tela de vendas, tecle <b>F8</b> no teclado para carregar a lista de todos os clientes disponiveis.  </p>
+                <img src="../img/clientes.png" alt="Imagem Venda">
+                <p>Para localizar o cliente correto, a três principais maneiras de localiza-lo: <b style="color: red;">Pelo código do Cliente</b>, <b style="color: #10a303;">pelo seu nome de razão Social/Fantasia</b> ou <b style="color: #0011ff;">Pelo CPF ou CNPJ</b></p>
+                <img src="../img/cliente localizado.png" alt="Imagem Venda">
+                <b style="color: #00a2ffc7;">Para localização pelo nome do cliente, lembre-se de selecionar se é Razão Social ou Fantasia (canto superior direio) </b>, 
+
+                <p><b>Em caso de cliente novo, acesse a pagina de <a  href="#">cadastro novo cliente</a> </b> </p>
+
+            </section>
+        </li>
+        <!-- Passo 3 -->
+        <li>
+            <div onclick="toggle_('section-3')" class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                3° Passo - Dados do Pedido 
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <section class="submenuItems" id="section-3">
+                <p>Ao selecionar o cliente, voçê deve selecionar o representante da venda e clicar no botão "OK". Se for no Atacado é Atacado. Se for na Loja é o Caixa que voçê estiver operando no momento. </p>
+                <img src="../img/representante.png" alt="Imagem Venda">
+
+                <p>Em seguida abrirá uma janela com alguns dados de pedidos anteriores realizado para este cliente. <b>Apenas clique em "OK"</b></p>
+                <img src="../img/cliente financeiro.png" alt="Imagem Venda">
+
+            </section>
+        </li>
+        <!-- Passo 4 -->
+        <li>
+            <div onclick="toggle_('section-4')" class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                4° Passo - Forma de Pagamneto
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <section class="submenuItems" id="section-4">
+                <p>A seguir voçê deve informar corretamente os seguintes campos<b> Condição de Pagamento e Tipo de Pagamento: </b></p>
+                <img src="../img/condição de pagamento.png" alt="Imagem Venda">
+
+                <p>Para isso, há 5 principais formas de pagamento: 
+                    <br><b>-> Nota VIMP - Pago a vista</b><img src="../img/vimp a vista.png" alt="Imagem Venda">
+                    <br><b>-> Nota VIMP - Assinada</b><img src="../img/vimp a carteira.png" alt="Imagem Venda">
+                    <br><b>-> Nota Fiscal eletrônica(NF-e) - Pago a vista</b><img src="../img/nfea vista.png" alt="Imagem Venda">
+                    <br><b>-> Nota Fiscal eletrônica(NF-e) - Assinada </b><img src="../img/nfe assinada.png" alt="Imagem Venda">
+                    <br><b>-> Nota Fiscal eletrônica(NF-e) - Pago no Boleto </b><img src="../img/nfe boleto.png" alt="Imagem Venda">
+                </p>
+                <p>OBS: Nota VIMP é uma nota simples que <b>não é Fiscal</b>.</p>
+
+            </section>
+        </li>
+        <!-- Passo 5 -->
+        <li>
+            <div onclick="toggle_('section-5')" class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                5° Passo - Passar Produtos
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <section class="submenuItems" id="section-5">
+                <p>A seguir será carregado a lista de todos os produtos disponiveis. Assim, para localizar o produto desejado há 3 maneiras: <b style="color: red;">Pelo código do Produto</b>, <b style="color: #10a303;">ou Pela descrição do produto </b> ou <b style="color: #0011ff;">Pelo código de barras:</b> </b></p>
+                <img src="../img/produto localizado.png" alt="">
+
+                <p>Ao localizar o produto clique duas vezes para adicionar ao pedido</p>
+                <img style="height: 340px;" src="../img/produto.png" alt="">
+                <p>Confira se o campo da <b>Unidade</b> e da <b>Quantidade</b> está de acordo antes de adicionar o produto </p>
+
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <h1><strong>Atenção!</strong> </h1>
+                    <p>O sistema do Industrial sempre vai iniciar com a unidade de maior quantidade do produto, idependentemento de qual codigo de barras é bipado. Portanto, sempre que for passar a unidade de um produto deve-se alterar o campo da unidade.</p>
+                </div>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <h1><strong>Atenção!</strong> </h1>
+                    <p>O sistema <b>NÃO</b> soma a quantidade de vezes que é passado um mesmo produto, ou seja, o campo de quantidade deve conter o valor da quantidade total do produto.</p>
+                    <p>por exemplo:</p>
+                    <p>um pirulito é passado e informo que a quantidade é 5. Se em outro momento da compra eu passar esse mesmo pirulito ele já vai abrir me avisando que possui 5 pirulitos e se eu querer passar mais 1 pirulito eu não posso informar a quantidade dele como 1, eu devo informar que agora são 6 pirulitos, assim o sistema substituira o valor 5 de antes por 6.</p>
+                </div>
+
+            </section>
+        </li>
+        <!-- Passo 6 -->
+        <li>
+            <div onclick="toggle_('section-6')" class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                6° Passo - Finalizar pedido
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <section class="submenuItems" id="section-6">
+                <p>Para finalizar a venda, basta clicar no botão de Finalizar no canto inferior direito da tela:</p>
+                <img src="../img/finalizar.png" alt="">
+
+                <p>Depois, abrirá uma janela de confirmação com um resumo de todos os dados do pedido. É nessa janela onde é possível dar desconto no valor total da compra, tanto em forma de <b style="color: red;">Valor de desconto</b> quanto em forma de <b style="color: #0011ff;">Porcentagem(%)</b>, conforme mostrado na imagem a seguir:</p>
+                <img src="../img/confirmar pedido.png" alt="">
+                <p><b>OBS: é importante revisar novamente se a condição de pagamento e tipo de pagamento estão corretos, e se necessario, é possivel altera-los nesta mesma janela. </b></p>
+
+
+            </section>
+        </li>
+        <!-- Passo 7 -->
+        <li>
+            <div onclick="toggle_('section-7')" class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                7° Passo - Integrar Pedido
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <section class="submenuItems" id="section-7">
+                <p>Para integrar um pedido que foi finalizado, vá até a tela de integração de pedido teclando <b>F9</b> no teclado, ou navegando pelo menu <b>Vendas -> Pedido -> Integração</b> </p>
+                <img src="../img/f9.png" alt="">
+
+                <p><b style="color: red;">Selecione a data</b> que o pedido foi emitido ou deixe em mês atual para pegar todos os pedidos que ainda não foram integrados no mês, e tecle <b>F8</b> para carregar os pedidos:</p>
+                <img src="../img/integração pedidos.png" alt="">
+                <p>Localize o pedido que deseja integrar e se atente se <b style="color: #0011ff;">número do pedido</b> está em negrito ou não</p>
+
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <h1><strong>Atenção!</strong> </h1>
+                    <p>Se o pedido estiver em <b>negrito</b> NÃO será emitido uma nota fiscal dele!</p>
+                    <p>Se o pedido NÃO estiver em <b>negrito</b> será emitido uma nota fiscal dele!</p>
+                    <p>Então siga a seguinte regra:
+                        <br><b>-> Nota VIMP =</b> <B>NEGRITO</B>
+                        <br><b>-> Nota Fiscal eletrônica(NF-e) =</b> NÃO NEGRITO
+                    </p>
+                    <p style="background-color: #ffee00;">OBS: para alterar a situação do negrito basta selecionar o pedido e teclar <b>Shift + F5</b></p>
+                </div>
+
+                <p>Por fim, para integrar o pedido basta selecionar o pedido desejado e clicar no botão "Integrar", conforme mostra a imagem:</p>
+                <img src="../img/integrar.png" alt="">
+
+            </section>
+        </li>
+        <!-- Passo 8 -->
+        <li>
+            <div onclick="toggle_('section-8')" class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                8° Passo - Imprimir Pedido
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <section class="submenuItems" id="section-8">
+                <p>Para imprimir um pedido, acesse a pagina de impressao de pedidos teclando<b> Alt + P</b> no teclado ou nevegando pelo menu <b>Vendas -> Pedido -> Impressão de pedido</b> </p>
+                <img src="../img/alt p.png" alt="">
+
+                <p><b style="color: red;">Selecione a data</b> que o pedido foi emitido e tecle <b>F8</b> para carregar os pedidos:</p>
+                <img src="../img/impressao data.png" alt="">
+                
+                <p>Localize o pedido que deseja imprimir e tecle <b>Ctrl + P</b> no teclado ou clique no <b>botão que tem o icone de uma impressora</b> no canto superior esquerda da tela:</p>
+                <img src="../img/impressao imprimir.png" alt="">
+                <p style="color: red;">OBS: certifique-se de que o campo imprimir esteja em SIM, como mostra na imagem a cima.</p>
+
+                <p>Por fim, selecione a impressoa e clique em OK:</p>
+                <img src="../img/impressora.png" alt="">
+
+            </section>
+        </li>
+
+    </ul>
+
+
+
+
+
+
+
+    <style>
+        body {
+            background-color: #39748b;
+        }
+
+        /* Styles for the accordion menu */
+        .accordion-menu {
+            list-style: none;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.788);
+            border-radius: 20px;
+            margin: 20px;
+        }
+
+        .accordion-menu li {
+            margin-bottom: 10px;
+        }
+
+        .dropdownlink {
+            background-color: #a6abafad;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border: 1px solid;
+            font-family: 'Alfa Slab One', serif;
+        }
+
+        .dropdownlink i {
+            margin-right: 10px;
+        }
+
+
+
+        .submenuItems {
+            display: none;
+            list-style: none;
+            padding-left: 0;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .submenuItems p{
+            text-align: justify;
+            max-width: 1000px;
+        }
+        .submenuItems img{
+            margin: 7px;
+            max-width: 1000px;
+
+        }
+
+        .submenuItems.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 5px;
+        }
+
+        .submenuItems li {
+            margin-bottom: 5px;
+        }
+
+
+
+    </style>
+
+    <script>
+        // const dropdownLinks = document.querySelectorAll('.dropdownlink');
+
+        // dropdownLinks.forEach(link => {
+        //     link.addEventListener('click', () => {
+        //         const submenu = link.nextElementSibling;
+        //         submenu.classList.toggle('active');
+        //     });
+        // });
+
+        function toggle_(element) {
+            var x = document.getElementById(element)
+            x.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
