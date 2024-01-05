@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+        </symbol>
+        <symbol id="info-fill" viewBox="0 0 16 16">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </symbol>
+        <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </symbol>
+    </svg>
+
+    <h1 style="text-align: center; margin: 20px; color: #000000; font-family: 'Anton', sans-serif; font-size: 50px;">
+        Documentação Papa Doce</h1>
+
+    <div class="d-flex m-5">
+        <div style="background-color: white; border-radius: 5px;">
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <a onclick="window.history.back();" class="btn btn-outline-secondary" for="btnradio1">Voltar</a>
+            </div>
+        </div>
+    </div>
+    <!-- <video id="meuVideo" width="640" height="360" controls>
+        <source src="./videos/Meet_ xyb-fzbe-hpr - Pessoal — Microsoft​ Edge 2023-12-04 19-54-06.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video> -->
+
+    <ul class="accordion-menu">
+        <h2 style="text-align: center; margin: 20px; color: #000000; font-family: 'Anton', sans-serif; font-size: 30px;">
+            <u>Emissão de Nota Fiscal Eletrônica (NF-e)</u></h2>
+        <!-- Passo 1 -->
+        <li>
+            <div onclick="toggle_('section-1')" class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                1° Passo - Conferência do Pedido 
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <section class="submenuItems" id="section-1">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <h1><strong>Atenção!</strong> </h1>
+                    <p>Esse passo a passo está partindo do ponto em que o pedido já foi realizado, <b>não está em negrito</b> e está com sua Forma de pagamento correta, ou seja, <b>Nota Fiscal/Simples</b> ou <b>Nota Fiscal/Boleto</b></p>
+                    <p>Se o pedido ainda não foi realizado ou tem duvidas sobre as formas de pagamento acesse como <a href="./venda-industrial.html">realizar pedido no Industrial</a></p>
+                </div>
+                <p>Acesse a pagina de conferencia de pedido pelo menu de navegação <b>Venda -> Pedido -> Conferência de Pedido (Integrados)</b></p>
+                <img src="../img/conferencia integrado.png" alt=" ">
+
+                <p>Clique duas vezes para abrir o pedido que deseja conferir:</p>
+                <img src="../img/conferencia localizado pedido.png" alt="">
+                <p>OBS: em casos de haver muitos pedidos, você pode usar os filtros do <b style="color: red;">numero do pedido ou data</b> para facilitar a busca</p>
+
+                <p>Após abrir o pedido irá aparecer todos os produtos que foram adicionados ao pedido. Você deve seguir os seguintes passos: </p>
+                <p>▪️ Clicar no botão <b>"Liberar campos"</b>
+                    <br><b>▪️ Selecionar todos os produtos</b> até que todos fiquem marcados (☑️) 
+                    <br> ▪️ Preencher no campo "Volume" a palavara "CAIXA"
+                    <br> ▪️ Preencher no campo "qtd" o número 1.
+                    <br> ▪️ Por fim clique em <b style="color: #10a303;">SALVAR</b>
+                </p>
+                <img src="../img/selecionar produtos.png" alt="">
+
+            </section>
+        </li>
+        <!-- Passo 2 -->
+        <li>
+            <div onclick="toggle_('section-2')" class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                2° Passo - Gerar um Romaneio do Pedido 
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <section class="submenuItems" id="section-2">
+                <p>Para gerar um Romaneio aperte a tecla <b>F2</b> no teclado ou acesse <b>Faturamento -> Expedição -> Romaneio</b></p>
+                <img src="../img/f2.png" alt="">
+                <p>Em seguida clique no botão de novo Romaneio (icone de uma folha de papel) localizado no canto superior esquerdo da tela:</p>
+                <img src="../img/novo romaneio.png" alt="">
+
+                <p>Depois tecle <b>F8</b> para carregar todos os pedidos que já foram conferidos e que ainda não estão em um romaneio.</p>
+                <p>Selecione o seu pedido</p>
+                <p>E clique em SALVAR no botão no canto superior esquerdo (💾)</p>
+                <img src="../img/salvar romaneio.png" alt="">
+
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <h1><strong>Atenção!</strong> </h1>
+                    <p>Se por um acaso estiver dois pedidos diferentes do mesmo cliente o sistema seleciona automaticamento os dois pedidos independentemente de qual você tenha selecionado.</p>
+                    <p>Se isso acontecer, filtre poelo numero do pedido nos campos de filtro a cima e aperte F8 para carregar novamente, assim aparecerá apenas o pedido desejado na lista.</p>
+                </div>
+
+                <p>Ao abrir a janela de salvamento do Romaneio basta colocar alguma descrição do romaneio, pode ser o nome do cliente do pedido.</p>
+                <p>E clique em OK</p>
+                <img src="../img/descricao romaneio.png" alt="">
+
+            </section>
+        </li>
+        <!-- Passo 3 -->
+        <li>
+            <div onclick="toggle_('section-3')" class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                3° Passo - Gerar Nota Fiscal
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <section class="submenuItems" id="section-3">
+                <p>Para gerar a Nota FIscal acesse <b>Faturamento -> Nota Fiscal -> Geração</b></p>
+                <img src="../img/nfe geração.png" alt="">
+
+                <p>Em seguida tecle <b>F8</b> para carregar todos os romaneios gerados.
+                <br>Selecione o Romaneio que voce acabou de gerar no passo anterior.
+                <br>E clique em SALVAR no botão no canto superior esquerdo (💾).
+                <br><b>OBS:</b> você pode visualizar pela observação que voce colocou ao gerar o romaneio para ter certeza que está gerando o romaneio correto</p>
+                <img src="../img/geração.png" alt="">
+
+                <div style="display: flex; align-items: center; justify-content: center; gap: 40px; margin: 30px;">
+                    <div style="display: flex; flex-direction: column; align-items: normal; justify-content: center;     width: 473px">
+                        <p>ATENÇÃO! Se a Nota Fiscal for a vista <b>(Nota Fiscal/Simples)</b> a nota será gerada e aparecera esse aviso:</p>
+                        <img src="../img/nfe gerada com sucesso.png" alt="">
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: normal; justify-content: center;     width: 473px">
+                        <p>Se a Nota Fiscal for com Boleto <b>(Nota Fiscal/Boleto)</b> o sistema vai perguntar nesse momento em qual impressora será impresso os boletos:</p>
+                        <img src="../img/nfe gerada com sucesso.png" alt="">
+                        <p>Então se por algum motivo você não conseguir imprimir o boleto neste momento, acesse <a href="#">Reimpressão de boletos</a> para ver como reimprimir. </p>
+                    </div>
+                </div>
+
+
+            </section>
+        </li>
+        <!-- Passo 4 -->
+        <li>
+            <div onclick="toggle_('section-4')" class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                4° Passo - Emitir nota no Horr Nf-e
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <section class="submenuItems" id="section-4">
+                <p>Abra o aplicativo <b>Horr Nfe</b> em seu computador:</p>
+                <img src="../img/horr nfe.png" alt="">
+
+                <p>Clique no botão <b>NF-E </b>no canto superior esquerdo:</p>
+                <img src="../img/Nfe.png" alt="">
+                <p>Em seguida precione <b>F8</b> para carregar as Notas Fiscais que foram gerados pelo Industrial.
+                    <br> Selecione o pedido que deseja emitir a nota.
+                <br> Clique em <b>Validar</b> no canto superior esquerdo</p>
+                <img src="../img/nfe selecionada.png" alt="">
+                <p>Em seguida abrirá uma notificação do sistema perguntando se deseja Transmitir a nota: <b>Clique em SIM:</b> </p>
+                <img src="../img/transmitir nota.png" alt="">
+                <p>Em seguida Clique em <b>Lotes NFe</b> no canto superior esquerdo: </p>
+                <img src="../img/lotes.png" alt="">
+                <p>Depois clique em <b>Carregar</b> e logo em seguida em <b>Consultar:</b> </p>
+                <img src="../img/consultar.png" alt="">
+                
+                
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                    <h1><strong>Atenção!</strong> </h1>
+                    <p>Se o retorno do lote for "Autorizado o uso da NF-e" é por que a nota não teve nenhum tipo de erro e já pode ser impressa.</p>
+                <p>Porém se aparecer algum erro escrito em vermelho no retorno do lote, você deve acessar <a href="">Coreeção de erros de NF-e</a> para trata-lo antes de imprimir a nota.</p>
+                </div>
+
+            </section>
+        </li>
+        <!-- Passo 5 -->
+        <li>
+            <div onclick="toggle_('section-5')" class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                5° Passo - Imprimir NF-e
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <section class="submenuItems" id="section-5">
+                <p>Clique no botão <b>NF-e</b> novamente:</p>
+                <img src="../img/nfe novamente.png" alt="">
+                <p>Depois Clique no botão <b>DANFE</b></p>
+                <img src="../img/danfe.png" alt="">
+                <p>E para finalizar, basta clicar no botão <b>imprimir</b> e selecionar a impressora:</p>
+                <img src="../img/imprimir nfe.png" alt="">
+
+            </section>
+        </li>
+
+    </ul>
+
+
+
+
+
+
+
+    <style>
+        body {
+            background-color: #39748b;
+        }
+
+        /* Styles for the accordion menu */
+        .accordion-menu {
+            list-style: none;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.788);
+            border-radius: 20px;
+            margin: 20px;
+        }
+
+        .accordion-menu li {
+            margin-bottom: 10px;
+        }
+
+        .dropdownlink {
+            background-color: #a6abafad;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border: 1px solid;
+            font-family: 'Alfa Slab One', serif;
+        }
+
+        .dropdownlink i {
+            margin-right: 10px;
+        }
+
+
+
+        .submenuItems {
+            display: none;
+            list-style: none;
+            padding-left: 0;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .submenuItems p{
+            text-align: justify;
+            max-width: 1000px;
+        }
+        .submenuItems img{
+            margin: 7px;
+            max-width: 900px;
+
+        }
+
+        .submenuItems.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 5px;
+        }
+
+        .submenuItems li {
+            margin-bottom: 5px;
+        }
+
+
+
+    </style>
+
+    <script>
+
+        function toggle_(element) {
+            var x = document.getElementById(element)
+            x.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
