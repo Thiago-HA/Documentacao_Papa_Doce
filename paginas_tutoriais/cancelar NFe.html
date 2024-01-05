@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+        </symbol>
+        <symbol id="info-fill" viewBox="0 0 16 16">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </symbol>
+        <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </symbol>
+    </svg>
+
+    <h1 style="text-align: center; margin: 20px; color: #000000; font-family: 'Anton', sans-serif; font-size: 50px;">
+        Documentação Papa Doce</h1>
+
+    <div class="d-flex m-5">
+        <div style="background-color: white; border-radius: 5px;">
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <a onclick="window.history.back();" class="btn btn-outline-secondary" for="btnradio1">Voltar</a>
+            </div>
+        </div>
+    </div>
+    <!-- <video id="meuVideo" width="640" height="360" controls>
+        <source src="./videos/Meet_ xyb-fzbe-hpr - Pessoal — Microsoft​ Edge 2023-12-04 19-54-06.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video> -->
+
+    <ul class="accordion-menu">
+        <h2 style="text-align: center; margin: 20px; color: #000000; font-family: 'Anton', sans-serif; font-size: 30px;">
+            <u>Cancelamento de Nota Fiscal Eletrônica (NF-e)</u></h2>
+        <!-- Passo 1 -->
+        <li>
+            <div onclick="toggle_('section-1')" class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                1° Passo - Cancelar Nota no Industrial 
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <section class="submenuItems" id="section-1">
+
+                <p>Para cancelar uma Nota Fiscal Eletrônica acesse <b>Faturamento -> Impressões -> Impressão Nota Fiscal </b></p>
+                <img src="../img/impressao_nfe.png" alt="">
+
+                <p>Filtre por <b>Cliente</b> ou <b>Numero da nota Fiscal</b> e aperte <b>F8</b> para carregar as notas.</p>
+                <p>Em seguida clique no <b>botão da borracha</b>localizado na parte superior da tela: </p>
+                <img src="../img/nota localizada.png" alt="">
+
+                <p>Em seguida informe o motivo do cancelamento e clique em OK </p>
+                <img src="../img/produto errado.png" alt="">
+
+                <p>Em seguida Confirme o cancelamento: </p>
+                <img src="../img/confirmação de cancelamento.png" alt="">
+
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <h1><strong>Atenção!</strong> </h1>
+                    <p>Se o tempo da nota fiscal for <b>maior que 24H</b> você <b>NÃO consiguirá cancelar</b> essa nota fiscal pelo metodo convencional! Informe algúem responsável do Financeiro para realizar o Estrono desta Nota!</p>
+                </div>
+
+                <p>Se a nota acusar um tempo <b>Menor que 24H</b> clique em SIM </p>
+                <img src="../img/tempo notafiscal.png" alt="">
+
+
+            </section>
+        </li>
+        <!-- Passo 2 -->
+        <li>
+            <div onclick="toggle_('section-2')" class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                2° Passo - Cancelar Nota no Horr NF-e
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <section class="submenuItems" id="section-2">
+
+                <p>Abra o aplicativo <b>Horr Nfe</b> em seu computador:</p>
+                <img src="../img/horr nfe.png" alt="">
+
+                <p>Clique no botão <b>NF-E </b>no canto superior esquerdo:</p>
+                <img src="../img/Nfe.png" alt="">
+
+                <p>Localize a nota pelo numero da Nota ou data de emissão </p>
+                <p>OBS: lembre-se de alterar a <b style="color: red;">Situação</b> da nota para <b>"todos"</b> ou <b>"autorizada"</b></p>
+                <img src="../img/situação nfe.png" alt="">
+
+                <p>Por fim, clique em cancelar nota no botão vermelho do menu: </p>
+                <img src="../img/cancelar horr nfe.png" alt="">
+
+
+            </section>
+        </li>
+
+    </ul>
+
+
+
+
+
+
+
+    <style>
+        body {
+            background-color: #39748b;
+        }
+
+        /* Styles for the accordion menu */
+        .accordion-menu {
+            list-style: none;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.788);
+            border-radius: 20px;
+            margin: 20px;
+        }
+
+        .accordion-menu li {
+            margin-bottom: 10px;
+        }
+
+        .dropdownlink {
+            background-color: #a6abafad;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border: 1px solid;
+            font-family: 'Alfa Slab One', serif;
+        }
+
+        .dropdownlink i {
+            margin-right: 10px;
+        }
+
+
+
+        .submenuItems {
+            display: none;
+            list-style: none;
+            padding-left: 0;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .submenuItems p{
+            text-align: justify;
+            max-width: 1000px;
+        }
+        .submenuItems img{
+            margin: 7px;
+            max-width: 900px;
+
+        }
+
+        .submenuItems.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 5px;
+        }
+
+        .submenuItems li {
+            margin-bottom: 5px;
+        }
+
+
+
+    </style>
+
+    <script>
+
+        function toggle_(element) {
+            var x = document.getElementById(element)
+            x.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
